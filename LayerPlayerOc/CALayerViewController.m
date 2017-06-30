@@ -26,6 +26,11 @@
     //setup Layer
     [self setUpLayer];
     [_viewForLayer.layer addSublayer:_layer];
+    
+    UIView *redView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    [self.view addSubview:redView];
+    
+    
 }
 
 - (void)setUpLayer
